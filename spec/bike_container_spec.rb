@@ -70,8 +70,7 @@ describe BikeContainer do
 			bike2 = Bike.new
 			holder.dock(bike1) #putting bike 1 in the holder
 			expect(holder.bikes).to eq [bike1] #expect the holder to contain bike 1
-			expect{(holder.release(bike2))}.to raise_error(RuntimeError) # expect when asking for bike2 to raise error 
-
+			expect{(holder.release(bike2))}.to raise_error(RuntimeError) # expect when asking for bike2 to raise error
 		end
 	end
 end
